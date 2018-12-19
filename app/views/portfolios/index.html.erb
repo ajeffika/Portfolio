@@ -5,6 +5,8 @@
   <p><%=item.subtitle %></p>
   <p><%=item.body %></p>
   <%=image_tag item.thumb_image unless item.thumb_image.nil? %>
-  <%=link_to "edit", edit_portfolio_path(item), class: "btn btn-danger" %>
+  <%=link_to "edit", edit_portfolio_path(item), class: "btn btn-warning" %>
+  <%= link_to 'Delete portfolio item', portfolio_path(item),class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
+
 
 <% end %>
