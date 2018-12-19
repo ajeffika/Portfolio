@@ -1,0 +1,6 @@
+<%= image_tag @portfolio_item.main_image%>
+<%= @portfolio_item.title%>
+<%= @portfolio_item.subtitle%>
+<%= @portfolio_item.body%>
+<%=link_to "edit", edit_portfolio_path(@portfolio_item.id), class: "btn btn-danger" %>
+<%=link_to "Portfolio", portfolios_path, class: "btn btn-danger" %>

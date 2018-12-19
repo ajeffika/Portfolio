@@ -1,9 +1,10 @@
 <h1>portfolio items</h1>
 <%=link_to "Create New Item", new_portfolio_path, class: "btn btn-primary" %>
 <%= @portfolio_items.each do |item|%>
-  <p><%=item.title %></p>
+  <p><h3><%=link_to item.title, portfolio_path(item) %></h3>h3</p>
   <p><%=item.subtitle %></p>
   <p><%=item.body %></p>
   <%=image_tag item.thumb_image unless item.thumb_image.nil? %>
-  <%=link_to "edit", edit_portfolio_path(item.id), class: "btn btn-danger" %>
+  <%=link_to "edit", edit_portfolio_path(item), class: "btn btn-danger" %>
+
 <% end %>
