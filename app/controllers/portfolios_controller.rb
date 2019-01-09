@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 class PortfoliosController < ApplicationController
+  def portfolio_params
+    params.require(:portfolio).permit(:title, :subtitle, :body)
+  end
+
   def index
     @portfolio_items = Portfolio.all
   end
@@ -48,8 +52,6 @@ end
       end
     end
     private
-    def portfolio_params
-      params.require(:portfolio).permit(:title, :subtitle, :body)
-  end
+
 end
   end
