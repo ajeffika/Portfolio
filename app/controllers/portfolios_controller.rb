@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 class PortfoliosController < ApplicationController
   def portfolio_params
-    params.require(:portfolio).permit(:title, :subtitle, :body)
+    params.require(:portfolio).permit(:title, :subtitle, :body,
+                                      technologies_attributes: [:name])
   end
 
   def index
@@ -12,6 +13,7 @@ def angular
 end
   def new
     @portfolio_item = Portfolio.new
+    3.times { @portfolio_item.technologies.build }
   end
 
   def create
