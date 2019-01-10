@@ -2,5 +2,12 @@
 <%= @portfolio_item.title%>
 <%= @portfolio_item.subtitle%>
 <%= @portfolio_item.body%>
+
+<h2>Technologies used</h2>
+
+<%@portfolio_item.technologies.each do |t| %>
+  <p><%=t.name %></p>
+
+<% end %>
 <%=link_to "edit", edit_portfolio_path(@portfolio_item.id), class: "btn btn-danger" %>
 <%=link_to "Portfolio", portfolios_path, class: "btn btn-danger" %>
