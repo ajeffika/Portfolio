@@ -55,3 +55,4 @@ gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'devise', '~> 4.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'ostruct'
