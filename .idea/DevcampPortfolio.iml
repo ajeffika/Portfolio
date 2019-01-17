@@ -68,6 +68,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.1, RVM: ruby-2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.3.0, RVM: ruby-2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.11.3, RVM: ruby-2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mistarz_view_tool (v0.1.0@64621c, RVM: ruby-2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.2.4, RVM: ruby-2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, RVM: ruby-2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.3.1, RVM: ruby-2.5.1) [gem]" level="application" />
