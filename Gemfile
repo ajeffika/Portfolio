@@ -58,3 +58,4 @@ gem 'devise', '~> 4.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ostruct'
 gem 'jquery-rails'
+gem 'mistarz_view_tool', git: 'https://github.com/ajeffika/mistarz_view_tool'

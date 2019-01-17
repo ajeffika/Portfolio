@@ -16,4 +16,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: 'source-greeting')
     end
   end
+
+  def copyright_generator
+    @copyright = MistarzViewTool::Renderer.copyright('Jan mistarz', 'All Rights reserved')
+  end
 end
