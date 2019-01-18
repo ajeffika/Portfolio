@@ -4,7 +4,8 @@ class BlogsController < ApplicationController
                                                  new
                                                  create
                                                  update
-                                                 edit] }, site_admin: :all
+                                                 edit
+                                                 toggle_status] }, site_admin: :all
   layout 'blog'
 
   # GET /blogs
