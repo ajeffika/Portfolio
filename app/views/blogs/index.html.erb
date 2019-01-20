@@ -1,8 +1,8 @@
 
   <div class="col-sm-8 blog-main">
-    <%=render @blogs %>
-    <nav class="blog-pagination"
-         <a class="btn btn-outline-secondary disabled" href="#">Older</a>
+    <%=paginate @blogs %>
+      <%=render @blogs %>
+    <%=paginate @blogs %>
   </div>
 
 
