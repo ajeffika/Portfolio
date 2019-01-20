@@ -4,13 +4,14 @@ class BlogsController < ApplicationController
                                                  new
                                                  create
                                                  update
-                                                 edit] }, site_admin: :all
+                                                 edit
+                                                 toggle_status] }, site_admin: :all
   layout 'blog'
 
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.page(params[:page]).per(5)
     @page_title = 'My Portfolio Blog'
   end
 
