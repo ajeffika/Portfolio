@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -53,4 +54,11 @@ end
 gem 'bootstrap', '~> 4.1.3'
 gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'devise', '~> 4.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'ostruct'
+gem 'jquery-rails'
+gem 'mistarz_view_tool', git: 'https://github.com/ajeffika/mistarz_view_tool'
+gem 'petergate', '~> 1.7'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'

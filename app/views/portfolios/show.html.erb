@@ -1,6 +1,29 @@
-<%= image_tag @portfolio_item.main_image%>
-<%= @portfolio_item.title%>
-<%= @portfolio_item.subtitle%>
-<%= @portfolio_item.body%>
-<%=link_to "edit", edit_portfolio_path(@portfolio_item.id), class: "btn btn-danger" %>
-<%=link_to "Portfolio", portfolios_path, class: "btn btn-danger" %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <%= image_tag @portfolio_item.main_image%>
+    </div>
+
+    <div class="col-md-5">
+      <%= @portfolio_item.title%>
+      <hr>
+      <%= @portfolio_item.subtitle%>
+      <hr>
+      <%= @portfolio_item.body%>
+      <hr>
+
+      <h3>Technologies used :</h3>
+
+      <%@portfolio_item.technologies.each do |t| %>
+        <p><%= t.name %></p>
+
+      <% end %>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+

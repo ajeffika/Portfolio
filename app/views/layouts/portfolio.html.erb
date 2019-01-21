@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><%= @page_title %></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <META name="keywords" content = "<%= @seo_keywords %>" />
+  <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+<%=render 'shared/portfolio_nav' %>
+
+<%=render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+
+<%= yield %>
+
+<%=render 'shared/portfolio_footer' %>
+
+<p>
+  <%= source_helper('portfolio') %>
+</p>
+
+</body>
+</html>
