@@ -5,7 +5,8 @@ class PortfoliosController < ApplicationController
                                                          new
                                                          create
                                                          update
-                                                         edit] }, site_admin: :all
+                                                         edit
+                                                         sort] }, site_admin: :all
   layout 'portfolio'
 
   def index
