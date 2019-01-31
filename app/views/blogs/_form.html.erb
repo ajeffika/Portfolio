@@ -1,9 +1,9 @@
 <%= form_for(blog) do |form| %>
   <% if blog.errors.any? %>
-    <%blog.errors.full_messages.each do |error| %>
+    <%error = blog.errors.full_messages.each  %>
       <%= alert_generator error %>
     <%end %>
-  <% end %>
+
       <div class="form-group">
     <%= form.text_field :title, class: 'form-control', placeholder:'Title' %>
   </div>
@@ -14,5 +14,6 @@
 
   <div class="form-group">
     <%= form.submit 'Submit', class: 'btn btn-primary'%>
+  </div>
 
 <%end %>
