@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73a299e-87fc-4b16-a15c-7139f8840814" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/blogs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/blogs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/topics_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/topics_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/topic.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/topic.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_blog_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_blog_sidebar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/blogs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/blogs/_form.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -76,11 +73,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/topics_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/blogs/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -150,7 +156,6 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/blogs/_blog_body.html.erb" />
         <option value="$PROJECT_DIR$/app/models/blog.rb" />
-        <option value="$PROJECT_DIR$/app/views/blogs/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogs/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/topics/show.html.erb" />
@@ -161,6 +166,7 @@
         <option value="$PROJECT_DIR$/app/controllers/topics_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/blogs_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_blog_sidebar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/blogs/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -428,16 +434,15 @@
       <workItem from="1549045208635" duration="3998000" />
       <workItem from="1549056567727" duration="1336000" />
       <workItem from="1549192547446" duration="1137000" />
-      <workItem from="1549201725238" duration="4333000" />
+      <workItem from="1549201725238" duration="4584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25299000" />
+    <option name="totallyTimeSpent" value="25550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1282" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27309564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -673,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogs/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -775,6 +773,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blogs/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
