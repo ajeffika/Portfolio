@@ -28,3 +28,4 @@
 
 # NO SECRETS
 .env
+/config/secrets.yml
