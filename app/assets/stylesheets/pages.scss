@@ -280,6 +280,17 @@ h6, .h6{
 }
 
 .pages-nav{
+
+  width:100%;
+
+}
+.button-right {
+  align-items: flex-start;
+}
+
+.pages-nav-items{
   text-align: center;
-  width:100%
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
