@@ -70,8 +70,7 @@ h6, .h6{
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -80,6 +79,8 @@ h6, .h6{
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+
 }
 
 /* Padding for spacing */
@@ -222,10 +223,12 @@ h6, .h6{
   z-index: -100;
   -webkit-transform :translateX(-50%) translateY(-50%);
   transform :translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('bokeh.png') no-repeat;
   background-size: cover;
+  filter:brightness(50%);
 
 }
+
 .app-footer{
   color:white;
 }
@@ -239,15 +242,19 @@ h6, .h6{
 .tech-news > .card {
   padding: 30px;
 }
-.app-card-container{
-  color:black;
+.app-container{
+  color:white;
   text-align:left;
+
+
 }
-.app-card-container > .card{
-  padding: 40px;
+.app-container > .card{
+  padding:1em;
+
 }
-.app-card-container a{
+.app-container a{
   color:green;
+
 }
 .card-body{
   margin-top:5px;
@@ -258,3 +265,31 @@ h6, .h6{
   margin-top:10px;
   margin-bottom:10px;
 }
+.skills > .card {
+  padding: 1em;
+  margin-top: 0.5em;
+}
+.profile-pic
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#background-image {
+  position: fixed;
+  top: 50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  width:100%;
+  height: 100%;
+  z-index: -100;
+  -webkit-transform :translateX(-50%) translateY(-50%);
+  transform :translateX(-50%) translateY(-50%);
+  background: image-url('astronomy.jpg') no-repeat;
+  background-size: cover;
+  filter:brightness(50%);
+
+}
+

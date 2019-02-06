@@ -1,0 +1,17 @@
+<nav class="masthead clearfix navbar navbar-expand-md navbar-dark bg-dark  pages-nav">
+  <button class="navbar-toggler navbar-toggler-right bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <%#= link_to "Jan Mistarz", root_path, class: 'navbar-brand' %>
+  <div class="inner">
+
+    <div class="nav nav-masthead app-nav collapse navbar-collapse" id="navbarSupportedContent">
+
+        <span class="navbar-nav mr-auto">
+          <h3 class="masthead-brand">Jan Mistarz</h3>
+          <%= nav_helper 'nav-link', 'span' %>
+          <%= login_helper 'nav-link' %>
+        </span>
+    </div>
+  </div>
+</nav>
