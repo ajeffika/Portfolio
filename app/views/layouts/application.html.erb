@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= @page_title %></title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <META name="keywords" content = "<%= @seo_keywords %>" />
-    <%=favicon_link_tag 'favicons/favicon.ico' %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
+  <title><%= @page_title %></title>
+  <%= csrf_meta_tags %>
 
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
+  <meta name="keywords" content="<%= @seo_keywords %>" />
 
-        <%=video_tag(
-              'HardDrivePhotojpeg.mp4',
+  <%= favicon_link_tag 'favicons/favicon.ico' %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+
+      <%= video_tag(
+              'Video_Of_Bokeh_Lights.mp4',
               id: 'background',
-              muted: true,
               autoplay: true,
               loop: true,
-              poster:'home_bg.png')
-        %>
+              muted: true,
+              poster: 'bokeh.png'
+          )
+      %>
 
-        <%=render 'shared/application_nav' %>
+      <%= render "shared/application_nav" %>
 
-        <%= yield %>
+      <%= yield %>
 
+      <%= render "shared/application_footer" %>
 
-        <%= alerts %>
+      <%= alerts %>
 
-        <%= source_helper('application') %>
-        <%=render 'shared/application_footer' %>
-
-      </div>
     </div>
-   </div>
-  </body>
+  </div>
+</div>
+</body>
 </html>

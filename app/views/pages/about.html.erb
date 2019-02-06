@@ -1,32 +1,24 @@
-<div class="app-card-container">
-  <div class="card">
-
-
-  <h1 class="cover-heading">Witam na moim portfolio</h1>
+<div class="app-container">
+  <h1 class="cover-heading text-center">Witam na moim portfolio</h1>
   <hr>
     <div class="row">
        <div class="col-md-4">
-         <%=image_tag 'https://placehold.it/300x400', width: 300, alt: 'profile image'%>
-         <div class="skills">
-          <%  @skills.each do |skill| %>
-             <div class="skill">
-               <h4><%=skill.title %></h4>
-               <div class="progress">
-                 <div class="progress-bar progress-bar-striped bg-warning"
-                      role="progressbar"
-                      aria-valuenow="<%=skill.percent_utilized %>"
-                      aria-valuemax="100"
-                      style="width: <%=skill.percent_utilized %>%;">
-                 </div>
-               </div>
-             </div>
-           <% end %>
-           </div>
+         <%=image_tag 'https://placehold.it/300x300', width: 300, alt: 'profile image', class:'profile-pic'%>
+
          </div>
       <div class="col-md-8">
         <div class="inner cover">
 
-        <p class="lead">Ruby</p>
+        <p class="lead">Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum</p>
           <p>
             <button
             class="btn btn-primary"
@@ -72,7 +64,26 @@
 
         </div>
       </div>
+      <div class="col-md-12">
+        <div class="skills">
+          <div class="card text-dark">
+            <%  @skills.each do |skill| %>
+              <div class="skill">
+                <h4><%=skill.title %></h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-warning"
+                       role="progressbar"
+                       aria-valuenow="<%=skill.percent_utilized %>"
+                       aria-valuemax="100"
+                       style="width: <%=skill.percent_utilized %>%;">
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
 </div>
 
