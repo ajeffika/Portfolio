@@ -18,7 +18,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    @copyright = ViewTool::Renderer.copyright('Jan mistarz', 'All Rights reserved')
+    @copyright = ViewTool::Renderer.copyright('Jan Mistarz', 'All Rights reserved')
   end
 
   def nav_items
