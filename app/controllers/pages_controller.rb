@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_action :set_locale
   layout :resolve_layout
   def home
     @posts = Blog.all
@@ -24,4 +25,10 @@ class PagesController < ApplicationController
     end
   end
 
+  def set_locale
+    locale = params[:locale].to_s.strip.to_sym
+    I18n.locale = I18n.available_locales.include?(locale) ?
+                      locale :
+                      I18n.default_locale
+  end
 end
