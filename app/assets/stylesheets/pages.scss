@@ -40,10 +40,6 @@ a:hover {
  */
 
 
-
-
-
-
 html,
 body {
   height: 100%;
@@ -281,15 +277,9 @@ h6, .h6{
 
 }
 
-.pages-nav{
-  padding-bottom:2em;
+.global-nav{
+  padding-bottom:1em;
+  padding-top:1em;
   justify-content: center;
 
-}
-
-.pages-nav-items{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
 }
