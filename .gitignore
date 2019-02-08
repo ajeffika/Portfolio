@@ -29,3 +29,6 @@
 # NO SECRETS
 .env
 /config/secrets.yml
+
+#ignore redis
+/config/cable.yml

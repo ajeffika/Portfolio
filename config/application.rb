@@ -17,7 +17,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module DevcampPortfolio
+module MistarzPortfolio
   class Application < Rails::Application
     config.eager_load_paths << "#{Rails.root}/lib"
     config.secret_key_base = ENV["SECRET_KEY_BASE"]
