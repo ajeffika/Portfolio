@@ -1,15 +1,17 @@
 class ApplicationController < ActionController::Base
+
   before_action :set_locale
+
 include DeviseWhitelist
 include SetSource
 include CurrentUserConcern
 include DefaultPageContent
-  def set_locale
-    locale = params[:locale].to_s.strip.to_sym
-    I18n.locale = I18n.available_locales.include?(locale) ?
-                      locale :
-                      I18n.default_locale
-  end
 
+  def set_locale
+    I18n.locale = params[:locale] || session[:locale] || I18n.default_locale
+    session[:locale] = I18n.locale
+      end
 end
+
+
 
