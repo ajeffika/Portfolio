@@ -1,24 +1,5 @@
+
 pl:
-  home: 'Home'
-  about_me: 'O Mnie'
-  contact: 'Kontakt'
-  blogs: 'Blog'
-  portfolios: 'Portfolio'
-  tech_news: 'Wiadomości'
-  login: 'Zaloguj się'
-  register: 'Zarejestruj się'
-  logout: 'Wyloguj się'
-
-  portfolio_description: 'Jestem Studentem informatyki pierwszego roku na WSEI.
-    w 2018 roku ukończyłem technikum informatyczne co pozowliło mi ukierunkować swoją
-    karierę.'
-  job_history: 'Historia zatrudnienia'
-  education: 'Edukacja'
-
-  published: 'Opublikowano'
-  ago: 'temu'
-
-
   activerecord:
     errors:
       messages:
@@ -26,8 +7,8 @@ pl:
         restrict_dependent_destroy:
           has_one: Nie może zostać usunięte, gdyż istnieje zależny od niego %{record}
           has_many: Nie może zostać usunięte, gdyż istnieją zależne od niego %{record}
-    date:
-      abbr_day_names:
+  date:
+    abbr_day_names:
       - nie
       - pon
       - wto
@@ -79,9 +60,9 @@ pl:
       - :day
       - :month
       - :year
-    datetime:
-      distance_in_words:
-        about_x_hours:
+  datetime:
+    distance_in_words:
+      about_x_hours:
         one: około godziny
         few: około %{count} godziny
         many: około %{count} godzin
@@ -144,7 +125,7 @@ pl:
       day: Dzień
       month: Miesiąc
       year: Rok
-
+  errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: musi zostać zaakceptowane
@@ -168,20 +149,20 @@ pl:
       required: musi istnieć
       taken: zostało już zajęte
       too_long:
-      one: jest za długie (maksymalnie jeden znak)
-      few: jest za długie (maksymalnie %{count} znaki)
-      many: jest za długie (maksymalnie %{count} znaków)
-      other: jest za długie (maksymalnie %{count} znaków)
-    too_short:
-      one: jest za krótkie (przynajmniej jeden znak)
-      few: jest za krótkie (przynajmniej %{count} znaki)
-      many: jest za krótkie (przynajmniej %{count} znaków)
-      other: jest za krótkie (przynajmniej %{count} znaków)
-    wrong_length:
-      one: ma nieprawidłową długość (powinna wynosić jeden znak)
-      few: ma nieprawidłową długość (powinna wynosić %{count} znaki)
-      many: ma nieprawidłową długość (powinna wynosić %{count} znaków)
-      other: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+        one: jest za długie (maksymalnie jeden znak)
+        few: jest za długie (maksymalnie %{count} znaki)
+        many: jest za długie (maksymalnie %{count} znaków)
+        other: jest za długie (maksymalnie %{count} znaków)
+      too_short:
+        one: jest za krótkie (przynajmniej jeden znak)
+        few: jest za krótkie (przynajmniej %{count} znaki)
+        many: jest za krótkie (przynajmniej %{count} znaków)
+        other: jest za krótkie (przynajmniej %{count} znaków)
+      wrong_length:
+        one: ma nieprawidłową długość (powinna wynosić jeden znak)
+        few: ma nieprawidłową długość (powinna wynosić %{count} znaki)
+        many: ma nieprawidłową długość (powinna wynosić %{count} znaków)
+        other: ma nieprawidłową długość (powinna wynosić %{count} znaków)
     template:
       body: 'Błędy dotyczą następujących pól:'
       header:
@@ -189,15 +170,91 @@ pl:
         few: "%{model} nie został zachowany z powodu %{count} błędów"
         many: "%{model} nie został zachowany z powodu %{count} błędów"
         other: "%{model} nie został zachowany z powodu %{count} błędów"
-    helpers:
-      select:
-        prompt: Proszę wybrać
-      submit:
-        create: Utwórz %{model}
-        submit: Zapisz %{model}
-        update: Aktualizuj %{model}
+  helpers:
+    select:
+      prompt: Proszę wybrać
+    submit:
+      create: Utwórz %{model}
+      submit: Zapisz %{model}
+      update: Aktualizuj %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: true
+        unit: zł
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Miliard
+          million: Milion
+          quadrillion: Biliard
+          thousand: Tysiąc
+          trillion: Bilion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: bajt
+            few: bajty
+            many: bajtów
+            other: bajty
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " oraz "
+      two_words_connector: " i "
+      words_connector: ", "
+  time:
+    am: przed południem
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+      pm: po południu
 
+  home: 'Home'
+  about_me: 'O Mnie'
+  contact: 'Kontakt'
+  blogs: 'Blog'
+  portfolios: 'Portfolio'
+  tech_news: 'Wiadomości'
+  login: 'Zaloguj się'
+  register: 'Zarejestruj się'
+  logout: 'Wyloguj się'
 
+  portfolio_description: 'Jestem Studentem informatyki pierwszego roku na WSEI.
+    w 2018 roku ukończyłem technikum informatyczne co pozowliło mi ukierunkować swoją
+    karierę.'
+  job_history: 'Historia zatrudnienia'
+  education: 'Edukacja'
 
-
-
+  published: 'Opublikowano'
+  ago: 'temu'
