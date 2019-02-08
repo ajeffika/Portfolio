@@ -1,18 +1,11 @@
-<div class="col-sm-8 blog-main">      <%= video_tag(
-              'Video_Of_Bokeh_Lights.mp4',
-              id: 'background',
-              autoplay: true,
-              loop: true,
-              muted: true,
-              poster: 'bokeh.png'
-          )
-      %>
-  <h1><%=@topic.title %></h1>
+<div class="col-sm-8 blog-main">
 
-  <%=paginate @blogs %>
-  <%=render @blogs %>
-  <%=paginate @blogs %>
+  <h1><%= @topic.title %></h1>
+
+  <%= paginate @blogs %>
+
+  <%= render @blogs %>
+
+  <%= paginate @blogs %>
+
 </div>
-
-
-
