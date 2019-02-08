@@ -137,6 +137,7 @@ h6, .h6{
 
 .cover {
   padding: 0 1.5rem;
+  margin-top: 0.5rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -282,4 +283,7 @@ h6, .h6{
   padding-top:1em;
   justify-content: center;
 
+}
+.tech-news >.card{
+  height:12rem;
 }

@@ -1,6 +1,20 @@
 pl:
+  home: 'Home'
+  about_me: 'O Mnie'
+  contact: 'Kontakt'
+  blogs: 'Blog'
+  portfolios: 'Portfolio'
+  tech_news: 'Wiadomości'
+  login: 'Zaloguj się'
+  register: 'Zarejestruj się'
+  logout: 'Wyloguj się'
+
   portfolio_description: 'Jestem Studentem informatyki pierwszego roku na WSEI.
     w 2018 roku ukończyłem technikum informatyczne co pozowliło mi ukierunkować swoją
     karierę.'
   job_history: 'Historia zatrudnienia'
   education: 'Edukacja'
+
+
+
+
