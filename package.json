@@ -1,7 +1,9 @@
 {
   "name": "DevcampPortfolio",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "typed.js": "^2.0.10"
+  },
   "devDependencies": {
     "prettier": "^1.16.4"
   }
