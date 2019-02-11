@@ -1,8 +1,12 @@
 {
   "name": "DevcampPortfolio",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "webpack-dev-server": "2.11.2"
   }
 }

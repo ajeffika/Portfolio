@@ -31,4 +31,8 @@
 /config/secrets.yml
 
 #ignore redis
-/config/cable.yml
+/config/cable.yml/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+.yarn-integrity
