@@ -2,12 +2,9 @@
   "name": "DevcampPortfolio",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@rails/webpacker": "3.5",
-    "jquery": "^3.3.1"
-=======
+    "jquery": "^3.3.1",
     "typed.js": "^2.0.10"
->>>>>>> 30e42734e2bf9f7984f597af488a4fa4bd283a58
   },
   "devDependencies": {
     "prettier": "^1.16.4",
