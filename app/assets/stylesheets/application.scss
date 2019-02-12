@@ -36,13 +36,7 @@ a:hover {
 
 /*
  * Base structure
- */
-
-
-
-
-
-
+*/
 html,
 body {
   height: 100%;
@@ -95,6 +89,7 @@ h6, .h6{
 
 .masthead {
   margin-bottom: 2rem;
+  width:85rem;
 }
 
 .masthead-brand {
@@ -181,11 +176,45 @@ h6, .h6{
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width:62rem){
+
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+    justify-content: center;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 85rem;
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width:88.25rem){
+
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 78rem;
+
+  }
+  .navbar-text-wrap{
+    white-space: nowrap;
+  }
+  .app-nav span {
+    margin-left: 15px;
+    margin-right: 15px;
+
   }
 }
 /*
@@ -208,10 +237,8 @@ h6, .h6{
   margin: 0 auto;
   float: none;
 }
-.app-nav span{
-  margin-left:15px;
-  margin-right:15px;
-}
+
+
 #background{
   position: fixed;
   top: 50%;
