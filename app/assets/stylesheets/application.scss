@@ -212,8 +212,9 @@ h6, .h6{
     white-space: nowrap;
   }
   .app-nav span {
-    margin-left: 15px;
-    margin-right: 15px;
+    white-space: nowrap;
+    margin-left:1em;
+    margin-right:1em
 
   }
 }
@@ -318,5 +319,25 @@ h6, .h6{
   background-size: cover;
   filter:brightness(50%);
 
+}
+.global-nav{
+  padding-bottom:1em;
+  padding-top:1em;
+  justify-content: center;
+
+}
+.wrapper1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
+}
+.content {
+  background-color: #f3f2ef;
+  border-radius: 3px;
+  width: 200px;
+  height: 100px;
 }
 
