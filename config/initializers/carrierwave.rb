@@ -1,6 +1,6 @@
 CarrierWave.configure do |config|
   config.storage    = :aws
-  config.aws_bucket = ENV.fetch('S3_BUCKET_NAME') # for AWS-side bucket access permissions config, see section below
+  config.aws_bucket = Rails.application.credentials.S3_BUCKET_NAME # for AWS-side bucket access permissions config, see section below
   config.aws_acl    = 'public-read'
 
 
