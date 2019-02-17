@@ -20,7 +20,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #007bff;
 }
 
 /* Custom default button */
@@ -89,7 +89,7 @@ h6, .h6{
 
 .jumbotron {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   margin-bottom: 0;
   background-color: #fff;
 }
@@ -130,18 +130,59 @@ h6, .h6{
   font-size: 85%;
 }
 
-.app-nav span{
-  white-space: nowrap;
-  margin-left:.5em;
-  margin-right:.5em;
-}
 .portfolio-container{
   padding-top:30px;
 }
 
-.global-nav{
-  padding-bottom:1em;
-  padding-top:1.5em;
+
+.portfolio-footer{
+  background:#f7f7f7;
+
+}
+.portfolio-footer > p{
+  margin-bottom: 0;
+
+
 }
 
+@media only screen and (min-width: 62rem){
 
+  .global-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin:0 auto;
+    width:100%;
+
+
+  }
+  .app-nav span {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+}
+@media only screen and (max-width: 62rem){
+
+  .global-nav{
+    margin:0 auto;
+
+  }
+  .app-nav span {
+    margin-left: .15em;
+    margin-right: .15em;
+  }
+
+}
+@media only screen and (min-width: 48rem){
+
+  .global-nav{
+    margin:0 auto;
+
+
+  }
+  .app-nav span {
+    margin-left: .15em;
+    margin-right: .15em;
+  }
+
+}
