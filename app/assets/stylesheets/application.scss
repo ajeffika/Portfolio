@@ -196,6 +196,12 @@ h6, .h6{
     width:68rem;
 
   }
+  .pages-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin:0 auto;
+    width: 100%;
+  }
   .app-nav span {
     white-space: nowrap;
     padding-left: 0.7rem;
@@ -209,6 +215,10 @@ h6, .h6{
     margin:0 auto;
 
   }
+  .pages-nav{
+    margin:0 auto;
+
+  }
   .app-nav span {
     margin-left: .15em;
     margin-right: .15em;
@@ -218,6 +228,11 @@ h6, .h6{
 @media only screen and (min-width: 48rem){
 
   .global-nav{
+    margin:0 auto;
+
+
+  }
+  pages-nav{
     margin:0 auto;
 
 
