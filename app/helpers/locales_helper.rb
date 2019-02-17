@@ -1,12 +1,12 @@
 module LocalesHelper
-    def locales_changer style = ''
+    def locales_changer (style = '', tag_type='')
+      locales_btns= ''
       if I18n.locale == I18n.default_locale
-        link_to "English", { locale:'en' }, class: style
-
+        locales_btns<< "<#{tag_type}> #{link_to "English", { locale:'en' }, class: style}</#{tag_type}>"
       else
-        link_to "Polski", { locale:'pl' }, class: style
-
+        locales_btns<< "<#{tag_type}> #{link_to "Polski", { locale:'pl' }, class: style}</#{tag_type}>"
       end
+      locales_btns.html_safe
   end
 end
 
