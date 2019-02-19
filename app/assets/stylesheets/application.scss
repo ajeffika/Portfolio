@@ -20,7 +20,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color:#999 ;
 }
 
 /* Custom default button */
@@ -44,7 +44,7 @@ body {
 }
 body {
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+
 }
 
 h1, .h1,
@@ -98,6 +98,10 @@ h6, .h6{
   text-align: right;
 }
 
+.login{
+  margin-top: 50px;
+}
+
 .login > .card{
   width: 22rem;
   margin: 0 auto;
@@ -122,7 +126,18 @@ h6, .h6{
 
 }
 
+footer > .app-footer{
+  color:black;
+  flex-shrink: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
 .app-footer{
+  flex-shrink: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
   color:white;
 }
 .tech-news{
@@ -225,15 +240,15 @@ h6, .h6{
   }
 
 }
-@media only screen and (min-width: 48rem){
+@media only screen and (min-width: 48rem) {
 
-  .global-nav{
-    margin:0 auto;
+  .global-nav {
+    margin: 0 auto;
 
 
   }
-  pages-nav{
-    margin:0 auto;
+  .pages-nav {
+    margin: 0 auto;
 
 
   }
@@ -241,5 +256,34 @@ h6, .h6{
     margin-left: .15em;
     margin-right: .15em;
   }
+}
+  @media only screen and (min-width: 100rem){
 
+    .global-nav{
+      padding-bottom:1em;
+      padding-top:1.5em;
+      margin:0 auto;
+      width:80rem;
+      font-size: 18px;
+
+    }
+    .pages-nav{
+      padding-bottom:1em;
+      padding-top:1.5em;
+      margin:0 auto;
+      width: 100%;
+    }
+    .app-nav span {
+      white-space: nowrap;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+}
+.cover-heading{
+  margin-top: 1rem;
+}
+
+.card{
+  margin-top: 50px;
 }
