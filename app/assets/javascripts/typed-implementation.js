@@ -2,8 +2,8 @@ document.addEventListener("turbolinks:load", function() {
 
 var options = {
 
-    strings: ['','Hello My name is jeff.', 'Jeffofsky, Jeff Jeffofsky'],
-    typeSpeed: 40
+    strings: ['','Witam, na moim portfolio', 'Jestem poczatkujacym developerem RoR'],
+    typeSpeed: 30
 };
 
 var typed = new Typed(".element", options);

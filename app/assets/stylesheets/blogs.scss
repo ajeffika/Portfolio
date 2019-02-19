@@ -18,7 +18,7 @@
  */
 
 @media (min-width: 48em) {
-  html {
+  html>.container {
     font-size: 18px;
   }
 }
@@ -28,6 +28,10 @@ body {
   color: #555;
 }
 
+body>.navbar
+{
+  text-align: center;
+}
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -39,14 +43,13 @@ h6, .h6 {
   font-weight: normal;
   color: #333;
 }
-
-
-/*
- * Override Bootstrap's default container.
- */
-
-.container {
-  max-width: 60rem;
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
 }
 
 
@@ -63,36 +66,112 @@ h6, .h6 {
 
 /* Nav links */
 .nav-link {
-  position: relative;
-  padding: 1rem;
-  font-weight: 500;
-  color: #cdddeb;
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
 }
+
 .nav-link:hover,
 .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.active {
   color: #fff;
-  background-color: transparent;
+  border-bottom-color: #fff;
 }
 
-/* Active state gets a caret at the bottom */
-.nav-link.active {
-  color: #fff;
+@media only screen and (min-width: 62rem){
+
+  .global-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin:0 0 30px 0;
+    width:68rem;
+
+  }
+  .pages-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    width: 100%;
+    margin:0 0 30px 0;
+
+  }
+  .app-nav span {
+    white-space: nowrap;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
 }
-.nav-link.active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent;
-}
+@media only screen and (max-width: 62rem){
+
+  .global-nav{
+    margin:0 0 30px 0;
 
 
+  }
+  .pages-nav{
+    margin:0 0 30px 0;
+
+
+  }
+  .app-nav span {
+    margin-left: .15em;
+    margin-right: .15em;
+  }
+
+}
+@media only screen and (min-width: 48rem) {
+
+  .global-nav {
+    margin:0 0 30px 0;
+
+
+
+  }
+  .pages-nav {
+    margin:0 0 30px 0;
+
+
+
+  }
+  .app-nav span {
+    margin-left: .15em;
+    margin-right: .15em;
+  }
+}
+@media only screen and (min-width: 100rem){
+
+  .global-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin:0 0 30px 0;
+    width:80rem;
+    font-size: 18px;
+
+  }
+  .pages-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    width: 100%;
+    margin:0 0 30px 0;
+
+
+  }
+  .app-nav span {
+    white-space: nowrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
 /*
  * Blog name and description
  */
@@ -201,11 +280,9 @@ h6, .h6 {
 }
 .blogcrumb a{
   font-size: 1.25em;
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px 0 10px;
 }
-.blog-nav{
-  margin-bottom:30px;
-}
+
 .blog-sidebar-source{
   margin-top: 20px;
 }
