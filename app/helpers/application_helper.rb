@@ -1,12 +1,13 @@
 module ApplicationHelper
 
   def login_helper(style='',tag_type='')
+    login_btns= ''
     if current_user.is_a?(GuestUser)
-      login_btns= ''
+
       login_btns<< "<#{tag_type}>#{(link_to t('register'), new_user_registration_path, class: style)}</#{tag_type}>
         <#{tag_type}> #{(link_to t('login'), new_user_session_path, class: style)}</#{tag_type}>"
     else
-      login_btns<< "<#{tag_type}> #{link_to t('logout'), destroy_user_session_path, method: :delete, class: style}
+      login_btns << "<#{tag_type}> #{link_to t('logout'), destroy_user_session_path, method: :delete, class: style}
 </#{tag_type}>"
     end
     login_btns.html_safe
