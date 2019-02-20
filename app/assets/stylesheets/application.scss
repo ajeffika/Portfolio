@@ -231,13 +231,18 @@ footer > .app-footer{
 
   }
   .pages-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
     margin:0 auto;
+    width: 100%;
 
   }
   .app-nav span {
-    margin-left: .15em;
-    margin-right: .15em;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
+
 
 }
 @media only screen and (min-width: 48rem) {
@@ -248,14 +253,19 @@ footer > .app-footer{
 
   }
   .pages-nav {
+    padding-bottom:1em;
+    padding-top:1.5em;
     margin: 0 auto;
+    width: 100%;
 
 
   }
   .app-nav span {
-    margin-left: .15em;
-    margin-right: .15em;
+
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
+
 }
   @media only screen and (min-width: 100rem){
 
@@ -287,3 +297,9 @@ footer > .app-footer{
 .card{
   margin-top: 50px;
 }
+.nav-masthead{
+  justify-content: center;
+}
+
+
+

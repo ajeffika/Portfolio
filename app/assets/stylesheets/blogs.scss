@@ -92,16 +92,15 @@ h6, .h6 {
   .global-nav{
     padding-bottom:1em;
     padding-top:1.5em;
-    margin:0 0 30px 0;
+    margin:0 auto;
     width:68rem;
 
   }
   .pages-nav{
     padding-bottom:1em;
     padding-top:1.5em;
+    margin:0 auto;
     width: 100%;
-    margin:0 0 30px 0;
-
   }
   .app-nav span {
     white-space: nowrap;
@@ -113,46 +112,52 @@ h6, .h6 {
 @media only screen and (max-width: 62rem){
 
   .global-nav{
-    margin:0 0 30px 0;
-
+    margin:0 auto;
 
   }
   .pages-nav{
-    margin:0 0 30px 0;
-
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin:0 auto;
+    width: 100%;
 
   }
   .app-nav span {
-    margin-left: .15em;
-    margin-right: .15em;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
+
 
 }
 @media only screen and (min-width: 48rem) {
 
   .global-nav {
-    margin:0 0 30px 0;
-
+    margin: 0 auto;
 
 
   }
   .pages-nav {
-    margin:0 0 30px 0;
-
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin: 0 auto;
+    width: 100%;
 
 
   }
   .app-nav span {
-    margin-left: .15em;
-    margin-right: .15em;
+
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
+
 }
 @media only screen and (min-width: 100rem){
 
   .global-nav{
     padding-bottom:1em;
     padding-top:1.5em;
-    margin:0 0 30px 0;
+    margin:0 auto;
     width:80rem;
     font-size: 18px;
 
@@ -160,10 +165,8 @@ h6, .h6 {
   .pages-nav{
     padding-bottom:1em;
     padding-top:1.5em;
+    margin:0 auto;
     width: 100%;
-    margin:0 0 30px 0;
-
-
   }
   .app-nav span {
     white-space: nowrap;
@@ -172,11 +175,16 @@ h6, .h6 {
   }
 
 }
+.nav-masthead{
+  justify-content: center;
+}
+
 /*
  * Blog name and description
  */
 
 .blog-header {
+  margin-top: 2rem;
   padding-bottom: 1.25rem;
   margin-bottom: 2rem;
   border-bottom: .05rem solid #eee;
