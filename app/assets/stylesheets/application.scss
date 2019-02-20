@@ -202,49 +202,7 @@ footer > .app-footer{
   height: 100px;
   font-size: 30px;
 }
-@media only screen and (min-width: 62rem){
 
-  .global-nav{
-    padding-bottom:1em;
-    padding-top:1.5em;
-    margin:0 auto;
-    width:68rem;
-
-  }
-  .pages-nav{
-    padding-bottom:1em;
-    padding-top:1.5em;
-    margin:0 auto;
-    width: 100%;
-  }
-  .app-nav span {
-    white-space: nowrap;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-  }
-
-}
-@media only screen and (max-width: 62rem){
-
-  .global-nav{
-    margin:0 auto;
-
-  }
-  .pages-nav{
-    padding-bottom:1em;
-    padding-top:1.5em;
-    margin:0 auto;
-    width: 100%;
-
-  }
-  .app-nav span {
-
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-
-}
 @media only screen and (min-width: 48rem) {
 
   .global-nav {
@@ -267,6 +225,29 @@ footer > .app-footer{
   }
 
 }
+@media only screen and (min-width: 62rem){
+
+  .global-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin:0 auto;
+    width:68rem;
+
+  }
+  .pages-nav{
+    padding-bottom:1em;
+    padding-top:1.5em;
+    margin:0 auto;
+    width: 100%;
+  }
+  .app-nav span {
+    white-space: nowrap;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+}
+
   @media only screen and (min-width: 100rem){
 
     .global-nav{
