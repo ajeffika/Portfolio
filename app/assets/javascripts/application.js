@@ -19,8 +19,9 @@
 //= require gritter
 //= require lib/typed.js
 //= require typed-implementation
+//= require i18n
+//= require i18n/translations
 //= require cable
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-

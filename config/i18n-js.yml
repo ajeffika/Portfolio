@@ -25,10 +25,9 @@
 #   - file: "app/assets/javascripts/i18n/translations.js"
 #     only: "*"
 #
-home:
-  pl:
-    sentence1: Witam na Moim portfolio
-    sentence2: Jestem początkującym developerem RoR
-  en:
-    sentence1: Welcome on My portfolio site
-    sentence2: I'm a begginer developer in RoR enviroment
+pl:
+  sentence1: Witam na Moim portfolio
+  sentence2: Jestem początkującym developerem RoR
+en:
+  sentence1: Welcome on My portfolio site
+  sentence2: I'm a begginer developer in RoR enviroment

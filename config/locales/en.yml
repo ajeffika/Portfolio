@@ -1,5 +1,6 @@
 en:
-
+  sentence1: Welcome on My portfolio site
+  sentence2: I'm a begginer developer in RoR enviroment
   home: 'Home'
   about_me: 'About Me'
   contact: 'Contact'
@@ -17,7 +18,10 @@ en:
   education: 'Education'
   published: 'Published'
   ago: 'ago'
+
   portfolio_title: My Portfolio
+
+
 
 
 
