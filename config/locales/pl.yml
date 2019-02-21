@@ -1,5 +1,8 @@
 
 pl:
+  sentence1: Witam na Moim portfolio
+  sentence2: Jestem początkującym developerem RoR
+  sentence3: Jestem początkującym developerem Ruby on Rails
   activerecord:
     errors:
       messages:
@@ -259,3 +262,4 @@ pl:
   published: 'Opublikowano'
   ago: 'temu'
   portfolio_title: Moje Portfolio
+
