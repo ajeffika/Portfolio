@@ -13,10 +13,18 @@
 
 }
 
+
+/*
+*LINKS
+ */
+a,
+a:focus,
+a:hover {
+  color:#3d4f7a ;
+}
 /*
  * Globals
  */
-
 @media (min-width: 48em) {
   html>.container {
     font-size: 18px;
@@ -59,7 +67,7 @@ h6, .h6 {
 
 .blog-masthead {
   margin-bottom: 3rem;
-  background-color: #428bca;
+  background-color: #6f7277;
   -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
   box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
