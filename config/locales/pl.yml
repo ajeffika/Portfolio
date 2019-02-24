@@ -257,7 +257,11 @@ pl:
 
   portfolio_description: 'Jestem Studentem informatyki pierwszego roku na WSEI.
     w 2018 roku ukończyłem technikum informatyczne co pozowliło mi ukierunkować swoją
+<<<<<<< HEAD
     karierę. Używam głównie Ruby on Rails ale nauczenie się nowego języka nie będzie stanowiło dla mnie wiekszego
+=======
+    karierę. Głównie uzywam Ruby on Rails ale nauczenie się nowego języka nie będzie stanowiło wiekszego
+>>>>>>> 8931a47... changed locales and github icon, refactored contact page. Added info on about page
     problemu.'
   job_history: 'Historia zatrudnienia'
   education: 'Edukacja'

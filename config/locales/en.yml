@@ -15,7 +15,11 @@ en:
 
   portfolio_description: "I'm a first year student of WSEI in Krakow. In 2018 i have finished
     technical colage focused on Information Technology what guided me towards my carrier. I primarly
+<<<<<<< HEAD
     use Ruby on Rails but picking up a new framework or language isn't a problem for me"
+=======
+    use Ruby on Rails but picking up a new framework or language isn't a problem"
+>>>>>>> 8931a47... changed locales and github icon, refactored contact page. Added info on about page
   job_history: 'Job History'
   education: 'Education'
   published: 'Published'
