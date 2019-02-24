@@ -1,5 +1,7 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
+@import "flag-icon";
 
 @font-face{
   font-family: 'Lato';
@@ -20,7 +22,7 @@
 a,
 a:focus,
 a:hover {
-  color:#999 ;
+  color:#475160 ;
 }
 
 /* Custom default button */
@@ -275,9 +277,6 @@ footer > .app-footer{
   margin-top: 1rem;
 }
 
-.card{
-  margin-top: 50px;
-}
 .nav-masthead{
   justify-content: center;
 }
@@ -290,12 +289,20 @@ main{
 }
 .container > .card {
   background: #e8e8e8;
+  margin-top: 50px;
 }
 .login > .card{
   background: #e8e8e8;
+  margin-top: 50px;
 }
 .card{
   height:9.5rem;
+}
+.education-item{
+  margin:2px;
+}
+.nav-icon{
+  font-size:24px;
 }
 
 
