@@ -3,6 +3,8 @@ pl:
   sentence1: Witam na Moim portfolio
   sentence2: Jestem początkującym developerem RoR
   sentence3: Jestem początkującym developerem Ruby on Rails
+  PCKZIU: PCKZiU w Wieliczce - Profil Technik Informatyk
+  WSEI: WSEI - Specjalizacja - Programowanie
   activerecord:
     errors:
       messages:
@@ -255,7 +257,8 @@ pl:
 
   portfolio_description: 'Jestem Studentem informatyki pierwszego roku na WSEI.
     w 2018 roku ukończyłem technikum informatyczne co pozowliło mi ukierunkować swoją
-    karierę.'
+    karierę. Głównie uzywam Ruby on Rails ale nauczenie się nowego języka nie będzie stanowiło wiekszego
+    problemu.'
   job_history: 'Historia zatrudnienia'
   education: 'Edukacja'
 

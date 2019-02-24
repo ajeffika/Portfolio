@@ -78,7 +78,11 @@ module ApplicationHelper
   def alert_generator msg
     js add_gritter(msg, title: 'Jeffik', sticky: false)
   end
+
+  def link_fa_to(icon_name, text, link)
+    link_to content_tag(:span,' ', class:  "fa fa-#{icon_name} nav-link nav-icon"), link
+  end
+
+
   private
-
-
 end

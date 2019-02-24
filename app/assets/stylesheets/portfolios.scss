@@ -1,5 +1,7 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
+@import "flag-icon";
 
 @font-face{
   font-family: 'Lato';
@@ -214,3 +216,8 @@ h6, .h6{
 .nav-masthead{
   justify-content: center;
 }
+.nav-icon{
+  font-size:24px;
+}
+
+
