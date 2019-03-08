@@ -43,6 +43,11 @@ module ApplicationHelper
       },
 
       {
+          url: blogs_path,
+          title: t('blogs')
+      },
+
+      {
          url: portfolios_path,
          title: t('portfolios')
       },
